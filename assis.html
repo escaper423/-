@@ -1,0 +1,108 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<center>
+<img src="./image/ta.jpg">
+</center>
+<a href='logout_assis.php'><img src="./image/logout.jpg" align=right></a>
+<title>조교 페이지</title>
+</head>
+<body bgcolor="white" text="black" link="white" vlink="white" alink="white">
+<style type="text/css">
+.urbangreymenu {
+	position: relative;
+	float: left;
+	width: 170px;
+	min-height: 100px;
+	margin-left: 70px;
+}
+
+.urbangreymenu .headerbar {
+	font: bold 16px Verdana;
+	color: white;
+	background: #606060 url(media/arrowstop.gif) no-repeat 8px 6px;
+	/*last 2 values are the x and y coordinates of bullet image*/
+	margin-bottom: 0; /*bottom spacing between header and rest of content*/
+	text-transform: uppercase;
+	padding: 7px 0 7px 31px; /*31px is left indentation of header text*/
+}
+
+.urbangreymenu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0;
+	/*bottom spacing between each UL and rest of content*/
+}
+
+.urbangreymenu ul li {
+	padding-bottom: 2px; /*bottom spacing between menu items*/
+}
+
+.urbangreymenu ul li a {
+	font: normal 14px Arial;
+	color: black;
+	background: #E9E9E9;
+	display: block;
+	padding: 5px 0;
+	line-height: 17px;
+	padding-left: 8px; /*link text is indented 8px*/
+	text-decoration: none;
+}
+
+.urbangreymenu ul li a:visited {
+	color: black;
+}
+
+.urbangreymenu ul li a:hover { /*hover state CSS*/
+	color: white;
+	background: black;
+}
+
+.headframe {
+	position: relative;
+	top: 1px;
+	width: 100%;
+	min-height: 30px;
+	margin-left: 500px;
+}
+
+.idframe {
+	position: relative;
+	margin-left: 80px;
+	min-height: 30px;
+	widtn: 200px;
+}
+
+#subframe {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 500%;
+	height: 700%;
+}
+</style>
+<div class="headframe">
+</div>
+<div class="urbangreymenu">
+<ul><h3 class="headerbar">조교 메뉴</h3>
+<li><a href="subject_check.html" target="subframe">교과목 확인</a></li>
+<li><a href="subject_create.html" target="subframe">교과목 입력</a></li>
+<li><a href="subject_update.html" target="subframe">교과목 수정</a></li>
+<li><a href="subject_delete.html" target="subframe">교과목 삭제</a></li>
+<li><a href="stu_check.html" target="subframe">학생 정보 확인</a></li>
+<li><a href="stu_create.html" target="subframe">학생 정보 입력</a></li>
+<li><a href="stu_update.html" target="subframe">학생 정보 수정</a></li>
+<li><a href="stu_delete.html" target="subframe">학생 정보 삭제</a></li>
+<li><a href="stu_search.html" target="subframe">학생 검색</a></li>
+<li><a href="pf_search.html" target="subframe">교수 검색</a></li>
+<li><a href="stu_schedule.html" target="subframe">학생 시간표 조회</a></li>
+<li><a href="pf_schedule.html" target="subframe">교수 시간표 조회</a></li>
+<li><a href="attend_check.html" target="subframe">과목별 출석부 확인</a></li>
+</ul>
+</div>
+<div class="urbangreymenu">
+<IFRAME name="subframe" id="subframe" src="subject_check.html"
+			frameborder=0 scrolling=yes></IFRAME>
+			</div>
+<?
+?>
